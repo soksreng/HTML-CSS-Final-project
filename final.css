@@ -1,0 +1,288 @@
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;  /*to center the class container horizontally */
+    padding: 0 20px;
+}
+
+.allenglandsite{
+    color:#333;
+}
+
+.allenglandsite:hover{
+    color: blue;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0; 
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none; /*remove bullet points */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /*display it horizontally*/
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;   /*targets the last element of <li>*/
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none; /*remove underline from link */
+    transition: color 0.3s ease; /* just animate the color on hover */
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main content */
+main {
+    padding: 20px 0;
+}
+
+.section {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.6; /*set line height for readability*/
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.winner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.winner img {
+    max-width: 100%; /*to make sure that the image doesnt exceed the container width*/
+    height: auto; /*Maintain aspect ratio*/
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.winner p {
+    font-size: 18px;
+    color: #333;
+}
+
+.hero {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);}
+
+.hero h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.all-england-winners {
+    background-color: #e6e6e6;
+    padding: 40px 0;
+}
+
+.all-england-winners h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.category {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.category h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.category .player {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(20% - 40px); /* Adjusted width to fit 5 players per row */
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category .player img {
+    display: block;
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; /* make sure the image cover the whole category class */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.category .player h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.category .player p {
+    font-size: 14px;
+    color: #555;
+}
+
+.category img {
+    width: 300px; 
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/*Style about's image*/
+.about-image {
+    width: 100%; 
+    height: auto; 
+    max-width: 300px; 
+    display: block; /*set an image as a block element*/
+    margin: 20px auto; /*Center the image horizontally*/
+}
+
+
+
+/*Media queries for responsiveness*/
+/*Small screens*/
+@media (max-width: 600px) {
+    header {
+        padding: 10px 0;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+}
+
+/*Medium screens*/
+@media (min-width: 601px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 32px;
+    }
+}
+
+/*Large screens*/
+@media (min-width: 1025px) {
+    header {
+        display: flex;
+        justify-content: center; /*Center the navigation bar*/
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center; /*Center the list items horizontally*/
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 20px;
+    }
+
+
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /*to ensure that  height is 56.25% of its width*/
+    height: 0; /*to create space for the video*/
+    overflow: hidden; /*prevent any content from overflowing*/
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
